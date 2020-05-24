@@ -20,7 +20,7 @@ public class HelloWorldController {
 	
 	@GetMapping(path="/hello-world-bean")
 	public HelloWorldBean helloWorldBean() {
-		return new HelloWorldBean("Welcome Nayaz to Spring Boot");
+		return new HelloWorldBean("Welcome Nayaz to Spring Boot Project example");
 	}	
 	
 	@GetMapping(path="/hello-world-bean/{name}")
