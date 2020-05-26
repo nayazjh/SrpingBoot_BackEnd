@@ -25,7 +25,7 @@ public class HelloWorldController {
 	
 	@GetMapping(path="/hello-world-bean/{name}")
 	public HelloWorldBean helloWorldBeanPathVariable(@PathVariable String name) {
-		return new HelloWorldBean(String.format("Welcome Nayaz, %s", name));
+		return new HelloWorldBean(String.format("Welcome Nayaz to Spring Boot Example todo App, %s", name));
 	}
 	
 
