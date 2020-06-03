@@ -27,15 +27,7 @@ pipeline {
 			}
 		}
     }
-	stage('SonarQube Analysis') {
-		steps {
-			dir('restful-web-services') {
-				withSonarQubeEnv('sonarqube') {
-					bat 'mvn sonar:sonar'
-				}
-			}
-		}
-    }
+	
     stage('Building image') {
       steps{
         script {
