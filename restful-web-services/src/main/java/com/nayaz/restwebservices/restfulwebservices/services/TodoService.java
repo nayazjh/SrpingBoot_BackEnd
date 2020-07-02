@@ -12,7 +12,7 @@ import com.nayaz.restwebservices.restfulwebservices.beans.Todo;
 public class TodoService {
 
 	private static List<Todo> todos = new ArrayList<Todo>();
-	private static int idCounter = 0;
+	private static long idCounter = 0;
 
 	static {
 

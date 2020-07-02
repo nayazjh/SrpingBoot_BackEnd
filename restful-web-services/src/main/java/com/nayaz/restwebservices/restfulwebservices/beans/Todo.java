@@ -2,6 +2,11 @@ package com.nayaz.restwebservices.restfulwebservices.beans;
 
 import java.util.Date;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+@Entity
 public class Todo {
 	
 	protected Todo() {
@@ -28,22 +33,25 @@ public class Todo {
 			return false;
 		return true;
 	}
-	public long id;
-	private String userName;
+	
+	@Id
+	@GeneratedValue
+	public Long id;
+	private String username;
 	private String description;
 	private Date targetDate;
 	private boolean isDone;
-	public long getId() {
+	public Long getId() {
 		return id;
 	}
-	public void setId(long id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
-	public String getUserName() {
-		return userName;
+	public String getUsername() {
+		return username;
 	}
-	public void setUserName(String userName) {
-		this.userName = userName;
+	public void setUsername(String username) {
+		this.username = username;
 	}
 	public String getDescription() {
 		return description;
@@ -63,10 +71,10 @@ public class Todo {
 	public void setDone(boolean isDone) {
 		this.isDone = isDone;
 	}
-	public Todo(long id, String userName, String description, Date targetDate, boolean isDone) {
+	public Todo(long id, String username, String description, Date targetDate, boolean isDone) {
 		super();
 		this.id = id;
-		this.userName = userName;
+		this.username = username;
 		this.description = description;
 		this.targetDate = targetDate;
 		this.isDone = isDone;
