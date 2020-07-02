@@ -1,4 +1,4 @@
-package com.nayaz.restwebservices.restfulwebservices.basic.auth;
+package com.nayaz.restwebservices.basic.auth;
 
 public class AuthenticationBean {
 	
